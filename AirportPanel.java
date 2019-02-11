@@ -58,6 +58,7 @@ public class AirportPanel {
         String airport1 = readString();
         System.out.print("Give destination airport code: ");
         String airport2 = readString();
+        System.out.println("\n");
         
         String airports = airport1 + "-" + airport2;
         
@@ -66,7 +67,6 @@ public class AirportPanel {
                 this.flights.add(new Flight(ap, airports));
             }
         }
-        System.out.println("");
     }
     
     private String readString(){
